@@ -45,13 +45,26 @@
 /* Carousel Item - Makes Images Fit */
 .carousel-item img {
   width: 100%;
-  height: 60vh; /* Adjust as needed */
+  height: 40vh; /* Adjust as needed */
   object-fit: cover; /* Ensures images cover the full area */
 }
 
+#slide_1_matches,
+#slide_2_matches,
+#slide_3_matches {
+  margin: 100px auto;
+  background-color: #00000080;
+  width: 300px;
+  border-radius: 20px;
+}
+
+/* Table with the matches */
 .main {
   width: 80%;
   margin: 50px auto;
+}
+.main:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Table with the matches */

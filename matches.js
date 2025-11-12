@@ -239,3 +239,72 @@ for (let val of matches) {
 }
 
 document.getElementById("result").innerHTML = html;
+
+
+// --------------------------------------//
+// Select the 1rd slide container
+let slide1Container = document.getElementById("slide_1_matches");
+
+// 1st Match
+let match_1 = matches[0];
+
+let home_1 = match_1.homeTeam?.name || "TBD";
+let away_1 = match_1.awayTeam?.name || "TBD";
+let result_1 = match_1.status === "played" && match_1.result
+    ? `${match_1.result.homeGoals} - ${match_1.result.awayGoals}`
+    : "vs";
+
+let matchHTML_1 = `
+  <h3>${match_1.dateVenue} | ${match_1.timeVenueUTC}</h3>
+  <h3>${home_1} ${result_1} ${away_1}</h3>
+`;
+
+// Project into the div(slide 1) in html
+slide1Container.innerHTML = matchHTML_1;
+// --------------------------------------//
+
+
+// --------------------------------------//
+// Select the 2rd slide container
+let slide2Container = document.getElementById("slide_2_matches");
+
+// 2nd Match
+let match_2 = matches[1];
+
+let home_2 = match_2.homeTeam?.name || "TBD";
+let away_2 = match_2.awayTeam?.name || "TBD";
+let result_2 = match_2.status === "played" && match_2.result
+    ? `${match_2.result.homeGoals} - ${match_2.result.awayGoals}`
+    : "vs";
+
+let matchHTML_2 = `
+  <h3>${match_2.dateVenue} | ${match_2.timeVenueUTC}</h3>
+  <h3>${home_2} ${result_2} ${away_2}</h3>
+`;
+
+// Project into the div(slide 2) in html
+slide2Container.innerHTML = matchHTML_2;
+// --------------------------------------//
+
+
+// --------------------------------------//
+// Select the 3rd slide container
+let slide3Container = document.getElementById("slide_3_matches");
+
+// 3rd Match
+let match_3 = matches[2];
+
+let home_3 = match_3.homeTeam?.name || "TBD";
+let away_3 = match_3.awayTeam?.name || "TBD";
+let result_3 = match_3.status === "played" && match_3.result
+    ? `${match_3.result.homeGoals} - ${match_3.result.awayGoals}`
+    : "vs";
+
+let matchHTML_3 = `
+  <h3>${match_3.dateVenue} | ${match_3.timeVenueUTC}</h3>
+  <h3>${home_3} ${result_3} ${away_3}</h3>
+`;
+
+// Project into the div(slide 3) in html
+slide3Container.innerHTML = matchHTML_3;
+// --------------------------------------//
