@@ -51,7 +51,9 @@
 
 #slide_1_matches,
 #slide_2_matches,
-#slide_3_matches {
+#slide_3_matches,
+#slide_4_matches,
+#slide_5_matches {
   margin: 100px auto;
   background-color: #00000080;
   width: 300px;
