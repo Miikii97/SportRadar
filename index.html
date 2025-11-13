@@ -9,6 +9,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/navbar_footer.css">
 
     <title>Sport Results</title>
 </head>
@@ -26,10 +27,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Bracket</a>
+                        <a class="nav-link" href="bracket.html">Bracket</a>
                     </li>
                 </ul>
             </div>
@@ -99,6 +100,33 @@
         <div class="table" id="result"></div>
     </div>
 
+    <!-- News section -->
+    <div class="news">
+        <h1 class="text-center pt-3">Breaking News:</h1>
+        <div class="first_next py-3 border-bottom border-secondary">
+            <h2 class="text-center p-3">Al Hilal maintain perfect ACL record with 2-1 away win</h2>
+            <p class="text-center fs-5 px-5 py-2">Al‑Hilal SFC (Saudi Arabia) continue their perfect start in the AFC
+                Champions
+                League
+                Elite 2025/26, securing
+                a 2-1 away victory against Al‑Gharafa SC of Qatar. The win gives them four wins out of four and puts
+                them 2
+                points clear at the top of the West Region table.</p>
+        </div>
+        <div class="second_news py-3 border-bottom border-secondary">
+            <h2 class="text-center p-3">Núñez and Hernández spark Al Hilal comeback to win 2-1</h2>
+            <p class="text-center fs-5 px-5 py-2">Al-Hilal also opened their campaign with a comeback 2-1 win over
+                Al-Duhail SC of Qatar. Goals by Darwin
+                Núñez and Theo Hernández secured the victory after going behind at half-time.</p>
+        </div>
+        <div class="third_news py-3">
+            <h2 class="text-center p-3">Nasaf beaten at home by Al Wahda after late header</h2>
+            <p class="text-center fs-5 px-5 py-2">PFC Nasaf of Uzbekistan are facing a tough run in their ACL campaign:
+                they suffered a 1-2 home defeat to
+                Al Wahda FC (UAE) thanks to an 89th-minute winner by Caio Canedo.</p>
+        </div>
+    </div>
+
     <!-- Footer -->
     <div class="footer">
         <div class="logos">
@@ -118,11 +146,10 @@
             </form>
         </div>
         <div class="thirdrow">
-            <p>&copy;Copyrights Group 3</p>
+            <p>&copy;Copyrights Miki Milenovikj</p>
         </div>
         <div class="footer-links">
-            <button class="btn my-btn1" href="#">Bracket</button>
-            <button class="btn my-btn1" href="/">About Us</button>
+            <button class="btn my-btn1" href="bracket.html">Bracket</button>
         </div>
         <div class="footer-logo">
             <img src="pictures/logo.jpg" />
@@ -133,7 +160,9 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
-    <script src="matches.js"></script>
+    <script src="/JavaScript/matches.js"></script>
+    <script src="/JavaScript/carousel.js"></script>
+    <script src="/JavaScript/loop_through_matches.js"></script>
 </body>
 
 </html>
