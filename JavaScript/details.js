@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Get the match index from URL
+
   let urlParams = new URLSearchParams(window.location.search);
   let matchIndex = urlParams.get("match");
 
@@ -10,19 +10,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let match = matches[matchIndex];
 
-  // Set team names
+
   document.getElementById("homeTeam").textContent = match.homeTeam?.name || "TBD";
   document.getElementById("awayTeam").textContent = match.awayTeam?.name || "TBD";
 
-  // Set logos (you can change src to your local images if available)
-  document.getElementById("homeLogo").src = `/pictures/teams/${match.homeTeam?.slug || "placeholder"}.png`;
-  document.getElementById("awayLogo").src = `/pictures/teams/${match.awayTeam?.slug || "placeholder"}.png`;
 
-  // Set score
+
+
   let score = match.result ? `${match.result.homeGoals} - ${match.result.awayGoals}` : "vs";
   document.getElementById("score").textContent = score;
 
-  // Set other info
+
   document.getElementById("matchDate").textContent = match.dateVenue || "-";
   document.getElementById("matchTime").textContent = match.timeVenueUTC || "-";
   document.getElementById("status").textContent = match.status || "-";
@@ -30,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("competition").textContent = match.originCompetitionName || "-";
   document.getElementById("stadium").textContent = match.stadium || "TBD";
 
-  // Match highlights
+
   let highlightsList = document.getElementById("highlightsList");
   highlightsList.innerHTML = "";
 

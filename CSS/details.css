@@ -5,12 +5,13 @@
 }
 
 .match-card {
-  max-width: 800px;
+  max-width: 50%;
   margin: 40px auto;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 10px;
   background-color: #f9f9f9;
+  box-shadow: 3px 3px 10px 0.5px black;
 }
 .teams {
   display: flex;
@@ -33,4 +34,12 @@
 }
 .match-info p {
   margin: 5px 0;
+}
+
+/* Table with the matches */
+.main_table {
+  width: 50%;
+  margin: 50px auto;
+  padding: 10px;
+  box-shadow: 3px 3px 10px 0.5px black;
 }

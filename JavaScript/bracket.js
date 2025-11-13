@@ -1,5 +1,3 @@
-// bracket.js
-
 document.addEventListener("DOMContentLoaded", () => {
   if (!matches || matches.length === 0) {
     console.error("No match data found!");

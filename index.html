@@ -98,11 +98,56 @@
 
     <!-- CALENDAR and TABLE for the Matches-->
     <div class="main_div">
+        <!-- Calendar for the Matches -->
         <div id='main_calendar'></div>
-        <!-- Table for the matches -->
+        <!-- Table for the Matches -->
         <div class="main_table">
             <h1 class="text-center my-3">Match Schedule:</h1>
             <div class="table mb-4" id="result"></div>
+        </div>
+    </div>
+
+    <!-- Add Match Button -->
+    <div class="text-center my-3">
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addMatchModal">
+            Add New Match
+        </button>
+    </div>
+
+    <!-- Add Match Modal -->
+    <div class="modal fade" id="addMatchModal" tabindex="-1" aria-labelledby="addMatchModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addMatchModalLabel">Add New Match</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="newMatchForm">
+                        <div class="mb-3">
+                            <label for="homeTeam" class="form-label">Home Team</label>
+                            <input type="text" class="form-control" id="homeTeam" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="awayTeam" class="form-label">Away Team</label>
+                            <input type="text" class="form-control" id="awayTeam" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="dateVenue" class="form-label">Date</label>
+                            <input type="date" class="form-control" id="dateVenue" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="timeVenueUTC" class="form-label">Time</label>
+                            <input type="time" class="form-control" id="timeVenueUTC" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="stadium" class="form-label">Stadium</label>
+                            <input type="text" class="form-control" id="stadium">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Add Match</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 

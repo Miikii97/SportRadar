@@ -14,7 +14,7 @@
     <title>Sport Results</title>
 </head>
 
-<body>
+<body class="details-page">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -40,14 +40,12 @@
     <div class="match-card">
         <div class="teams">
             <div class="team">
-                <img id="homeLogo" src="" alt="Home Team Logo">
                 <h3 id="homeTeam"></h3>
             </div>
 
             <div class="score" id="score">-</div>
 
             <div class="team">
-                <img id="awayLogo" src="" alt="Away Team Logo">
                 <h3 id="awayTeam"></h3>
             </div>
         </div>
@@ -61,12 +59,18 @@
             <p><strong>Stadium:</strong> <span id="stadium">TBD</span></p>
         </div>
 
-        <div id="highlights" style="margin-top:20px;">
+        <div id="highlights" class="mt-3">
             <h4>Match Highlights:</h4>
             <ul id="highlightsList">
                 <!-- Goals, cards, etc. will appear here -->
             </ul>
         </div>
+    </div>
+
+    <!-- Table for the Matches -->
+    <div class="main_table">
+        <h1 class="text-center my-3">Match Schedule:</h1>
+        <div class="table mb-4" id="result"></div>
     </div>
 
     <!-- Footer -->
@@ -105,6 +109,7 @@
         crossorigin="anonymous"></script>
 
     <script src="/JavaScript/matches.js"></script>
+    <script src="/JavaScript/matches_table.js"></script>
     <script src="/JavaScript/details.js"></script>
 
 </body>

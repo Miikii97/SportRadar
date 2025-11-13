@@ -1,12 +1,12 @@
 let matches = [ 
         { 
             season: 2026, 
-            status: "played", 
+            status: "Played", 
             timeVenueUTC: "16:00:00", 
             dateVenue: "2025-11-03", 
-            stadium: null, 
+            stadium: "Shababovski Stadium", 
             homeTeam: { 
-                name: "Al Shabab", 
+                name: "Al Shabab",
                 officialName: "Al Shabab FC", 
                 slug: "al-shabab-fc", 
                 abbreviation: "SHA", 
