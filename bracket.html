@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/CSS/bracket.css">
+    <link rel="stylesheet" href="/CSS/navbar_footer.css">
+
+    <title>Sport Results</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img class="img" src="pictures/logo.jpg" routerLink="/" />
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bracket.html">Bracket</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BRACKET FORMAT FOR THE TOURNAMENT -->
+    <h1 class="text-center my-4">Tournament Bracket</h1>
+    <div class="bracket br-2">
+
+        <!-- QUARTER-FINAL MATCH -->
+        <section aria-labelledby="round-2">
+            <h2 id="round-2">Quarter-Final</h2>
+            <ol>
+                <li>
+                    <div id="match_1">
+                        <h6 class="home"></h6>
+                        <h6 class="away"></h6>
+                        <span class="datetime"></span>
+                    </div>
+                </li>
+                <li>
+                    <div id="match_2">
+                        <h6 class="home"></h6>
+                        <h6 class="away"></h6>
+                        <span class="datetime"></span>
+                    </div>
+                </li>
+                <li>
+                    <div id="match_3">
+                        <h6 class="home"></h6>
+                        <h6 class="away"></h6>
+                        <span class="datetime"></span>
+                    </div>
+                </li>
+                <li>
+                    <div id="match_4">
+                        <h6 class="home"></h6>
+                        <h6 class="away"></h6>
+                        <span class="datetime"></span>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <!-- SEMI-FINAL MATCH -->
+        <section aria-labelledby="round-3">
+            <h2 id="round-3">Semi-Final</h2>
+            <ol>
+                <li>
+                    <div id="semifinal_1">
+                        <h6 class="home"></h6>
+                        <h6 class="away"></h6>
+                        <span class="datetime"></span>
+                    </div>
+                </li>
+                <li>
+                    <div id="semifinal_2">
+                        <h6 class="home"></h6>
+                        <h6 class="away"></h6>
+                        <span class="datetime"></span>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <!-- FINAL MATCH -->
+        <section aria-labelledby="round-4">
+            <h2 id="round-4">Final</h2>
+            <ol>
+                <li>
+                    <div id="final_match">
+                        <h6 class="home"></h6>
+                        <h6 class="away"></h6>
+                        <span class="datetime"></span>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="logos">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="pictures/facebookLogo.png" class="img1" /></a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="pictures/instaLogo.jpg" class="img2" /></a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <img src="pictures/twitterLogo.jpg" class="img3" /></a>
+        </div>
+        <div class="newsletter-form">
+            <h3>Subscribe to Our Newsletter</h3>
+            <form>
+                <label for="email">E-Mail: </label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" />
+                <button type="submit" class="my-btn">Subscribe</button>
+            </form>
+        </div>
+        <div class="thirdrow">
+            <p>&copy;Copyrights Group 3</p>
+        </div>
+        <div class="footer-links">
+            <a class="btn my-btn1" href="index.html">Home</a>
+            <a class="btn my-btn1" href="bracket.html">Bracket</a>
+        </div>
+        <div class="footer-logo">
+            <img src="pictures/logo.jpg" />
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="/JavaScript/matches.js"></script>
+    <script src="/JavaScript/bracket.js"></script>
+</body>
+
+</html>
