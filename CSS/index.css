@@ -44,6 +44,12 @@
   margin: auto;
 }
 
+#calendar {
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+}
+
 @media (width <= 585px) {
   .main {
     box-shadow: none;
