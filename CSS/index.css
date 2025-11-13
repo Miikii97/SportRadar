@@ -23,9 +23,23 @@
   border-radius: 20px;
 }
 
-/* Table with the matches */
-.main {
+/* DIV with flex for the match schedule and calendar */
+.main_div {
+  display: flex;
   width: 80%;
+  margin: auto;
+}
+
+/* Table with the matches */
+.main_table {
+  width: 47%;
+  margin: 50px auto;
+  padding: 10px;
+  box-shadow: 3px 3px 10px 0.5px black;
+}
+
+#main_calendar {
+  width: 47%;
   margin: 50px auto;
   padding: 10px;
   box-shadow: 3px 3px 10px 0.5px black;
@@ -37,22 +51,17 @@
   box-shadow: 3px 3px 10px 0.5px black;
 }
 
-/* Table with the matches */
-.table {
-  text-align: center;
-  width: 80%;
-  margin: auto;
-}
+@media (width <= 1080px) {
+  .main_div {
+    display: grid;
+    width: 90%;
+  }
+  .main_table {
+    width: 100%;
+  }
 
-#calendar {
-  width: 80%;
-  margin: auto;
-  padding: 30px;
-}
-
-@media (width <= 585px) {
-  .main {
-    box-shadow: none;
+  #main_calendar {
+    width: 100%;
   }
 }
 

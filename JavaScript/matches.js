@@ -2,7 +2,7 @@ let matches = [
         { 
             season: 2026, 
             status: "played", 
-            timeVenueUTC: "00:00:00", 
+            timeVenueUTC: "16:00:00", 
             dateVenue: "2025-11-03", 
             stadium: null, 
             homeTeam: { 
@@ -44,7 +44,7 @@ let matches = [
         { 
             season: 2026, 
             status: "scheduled", 
-            timeVenueUTC: "16:00:00", 
+            timeVenueUTC: "18:30:00", 
             dateVenue: "2025-11-03", 
             stadium: null, 
             homeTeam: { 
@@ -88,7 +88,7 @@ let matches = [
         { 
             season: 2026, 
             status: "scheduled", 
-            timeVenueUTC: "15:25:00", 
+            timeVenueUTC: "20:00:00", 
             dateVenue: "2025-11-04", 
             stadium: null, 
             homeTeam: { 
@@ -132,7 +132,7 @@ let matches = [
         { 
             season: 2026, 
             status: "scheduled", 
-            timeVenueUTC: "08:00:00", 
+            timeVenueUTC: "21:30:00", 
             dateVenue: "2025-11-04", 
             stadium: null, 
             homeTeam: { 
@@ -176,7 +176,7 @@ let matches = [
         { 
             season: 2026, 
             status: "scheduled", 
-            timeVenueUTC: "00:00:00", 
+            timeVenueUTC: "21:00:00", 
             dateVenue: "2025-11-19", 
             stadium: null, 
             homeTeam: null, 
@@ -202,10 +202,4 @@ let matches = [
 ];  
 
 
-      document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('calendar');
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: 'dayGridMonth'
-        });
-        calendar.render();
-      });
+

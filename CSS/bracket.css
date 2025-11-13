@@ -22,6 +22,14 @@
   height: 120vh;
 }
 
+/* Table with the matches */
+.main {
+  width: 80%;
+  margin: 50px auto;
+  padding: 10px;
+  box-shadow: 3px 3px 10px 0.5px black;
+}
+
 section {
   max-width: 200px;
   min-width: 100px;
