@@ -1,0 +1,96 @@
+How I Used AI During This Assignment
+
+During the development of this project, I used AI (ChatGPT) as a support tool — not to produce the entire solution, but to help me clarify concepts, 
+solve specific issues, and speed up repetitive tasks. Below is a transparent explanation of what parts I wrote myself and what parts were influenced by AI.
+
+/// What I Wrote Myself ///
+
+I personally wrote the following main parts of the project:
+
+The HTML structure for index.html, including the layout of the calendar, carousel, match table, form, and news section.
+
+The logic for the details page (details.html + details.js).
+
+The full match dataset (matches.js) including structure, properties, and sample data.
+
+The integration logic for:
+
+Clicking an event in the calendar to open the details page
+
+Extracting query parameters and showing match information
+
+Populating the match table
+
+The majority of the CSS styling for:
+---Navbar
+---Footer
+---Details layout
+
+I also made the final decisions on how the UI should behave and how data should be stored.
+
+// Calendar Integration //
+
+Understand how to convert my match objects into FullCalendar event objects
+
+Configure eventClick to redirect to the details page
+
+Hide the full event title and display a small dot instead
+
+However, I wrote the final logic and made sure I understood every parameter (title, start, extendedProps, etc.).
+
+
+/// What Was Influenced by AI ///
+
+AI helped me mainly with implementation ideas, bug fixing, and code optimization. These include:
+
+LocalStorage Saving Logic:
+
+---The AI helped me design the idea of:
+---Loading matches from localStorage first
+---Merging or replacing matches
+---Updating the calendar when new matches are added
+
+Modal Form Logic:
+
+---I used AI to generate a starting version of the modal form submission handler.
+I then:
+
+---Adapted it to my match object structure
+---Fixed index tracking
+---Connected it to FullCalendar
+
+
+/// To avoid blindly copying code, I followed these steps: ///
+
+---I manually tested every feature after adding AI-suggested code.
+---I rewrote several parts that were too abstract or didn’t match my project structure.
+---I added console logs and inspected event objects to make sure I understood exactly what was happening.
+---I checked the FullCalendar documentation to confirm any properties suggested by AI.
+---I adjusted variable names, object shapes, and formatting to maintain consistency with my own code.
+This process ensured I fully understood, verified, and controlled all AI-assisted contributions.
+
+
+/// Important Technical Decisions I Made ///
+
+Using FullCalendar instead of building my own calendar from scratch
+→ It allowed me to focus on match logic rather than calendar implementation.
+
+Storing matches in localStorage
+→ Ensures user-added matches persist without requiring a backend.
+
+Using URL parameters to display match details
+→ Simple, clean, and efficient for a multi-page static site.
+
+
+/// One Improvement I Would Make With More Time ///
+
+If I had more time, I would implement:
+---Editable and deletable user-created matches
+---Right now, users can add matches but cannot update or remove them.
+---Adding CRUD functionality would make the calendar truly dynamic and more professional.
+
+
+/// Summary ///
+
+AI was used ethically and responsibly as a learning tool — not as a replacement for my own coding.
+I understand all the code in this project and made all final architectural and technical decisions myself.
